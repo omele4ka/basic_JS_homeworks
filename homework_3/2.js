@@ -6,3 +6,17 @@
 // "Размер заработной платы за вычетом налогов равен значение"
 
 'use strict';
+
+
+const salary = +prompt('Введите размер Вашей ЗП');
+
+function pureSalary(num) {
+    if (isNaN(num)) {
+        console.log('Данные введены некорректно!');
+    } else {
+        const moneyToPay = num - num * 0.13
+        console.log(`Размер заработной платы за вычетом налогов равен ${moneyToPay}`);
+    }
+}
+
+pureSalary(salary);
