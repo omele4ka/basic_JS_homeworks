@@ -17,3 +17,29 @@
 'use strict';
 
 
+function sumNums(num1, num2) {
+    return num1 + num2;
+}
+
+function differenceNums(num1, num2){
+    if(num1 > num2){
+        return num1 - num2;
+    } else if(num1 < num2){
+        return num2 - num1;
+    } else {
+        return 0;
+    }
+}
+
+function multiplyNums(num1, num2) {
+    return num1 * num2;
+}
+
+function divideNums(num1, num2) {
+    return num1 / num2;
+}
+
+console.log(sumNums(2, 6));
+console.log(differenceNums(2, 6));
+console.log(multiplyNums(2, 6));
+console.log(divideNums(2, 6));
