@@ -12,4 +12,8 @@ xxxx
 xxxxx
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+let slide = "";
+for (let i = 0; i < 20; i++) {
+  slide += "x";
+  console.log(slide);
+}

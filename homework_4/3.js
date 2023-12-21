@@ -14,4 +14,27 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const arrTask2 = [];
+let sum = 0;
+for (let i = 0; i < 5; i++) {
+  arrTask2.push(Math.floor(Math.random() * 9));
+  sum += arrTask2[i];
+}
+console.log(arrTask2);
+console.log(sum);
+
+let minValue = arrTask2[0];
+for (let j = 0; j < arrTask2.length; j++) {
+  if (arrTask2[j] < minValue) {
+    minValue = arrTask2[j];
+  }
+}
+console.log(minValue);
+
+const newArr = [];
+for (let k = 0; k < arrTask2.length; k++) {
+  if (arrTask2[k] === 3) {
+    newArr.push(k);
+  }
+}
+console.log(newArr);
