@@ -14,3 +14,10 @@ const numbers = {
   key6: 0,
   key7: 7,
 };
+
+for (const key in numbers) {
+  const value = numbers[key];
+  if (value >= 3) {
+    console.log(value);
+  }
+}
